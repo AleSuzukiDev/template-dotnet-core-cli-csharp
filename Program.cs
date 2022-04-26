@@ -70,12 +70,49 @@ namespace dotnetcore
             #endregion
 
             #region PegarInformacao
-            
+            /*
             Console.WriteLine("Digite o seu nome: ");
             var nome = Console.ReadLine();
             Console.WriteLine($"Olá, {nome}!");
-            
+            */
             #endregion
+
+            //Números
+            // Operadores matemáticos: +, -, * , /
+            
+            #region OperadoresMatematicos
+            /*
+            var soma = 10 + 5;
+            var subtracao = 10 -5;
+            var multiplicacao = 10*5;
+            var divisao = 10/5;
+
+            Console.WriteLine($"O resultado da soma: {soma}!");
+            Console.WriteLine($"O resultado da subtracao: {subtracao}!");
+            Console.WriteLine($"O resultado da multiplicacao: {multiplicacao}!");
+            Console.WriteLine($"O resultado da divisao: {divisao}!");
+            */
+            #endregion
+
+            //Desafio 1
+            // "E os 10% do garçom?"
+            // Declarar uma variavel com o valor da conta
+            // Declarar uma variavel com o valor da taxa adicional do garçom
+
+            // Declarar uma variável com o resultado dessa operação, adicionando a porcentagem da taxa no valor da conta
+            // Essa terceira variavel deve utilizar o valor das duas primeiras para fazer o calculo
+            // Ao final, exiba quanto ficou o valor total da conta
+            // Dica: Para formatar uma variavel como moeda, utilize a seguinte declaração:
+            // Console.WriteLine($"O resultado da divisao: R{varivavelComValor:C}");
+            Console.WriteLine("Digite o valor da conta: ");
+            double valorDaConta = Double.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Digite o percentual do Garçon: ");
+            double percentualDoGarcon = Double.Parse(Console.ReadLine());
+
+            var resultado = valorDaConta + ( valorDaConta * percentualDoGarcon / 100);
+            Console.WriteLine($"O resultado da divisao: R{resultado:C}");
+
 
         }
     }
